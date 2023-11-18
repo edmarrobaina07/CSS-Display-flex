@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* display flex sempre será colocado no container por exemplo. display flex sozinho alinha um do lado do outro.*/
+
+.container {
+    margin: 10px;
+    border: 1px solid #ff0000;
+    display: flex;
+    /* flex-direction: column-reverse; No container pode usar o flex-direction*/
+   /*justify-content: center;*/
+    /*justify-content: space-between;*/
+   
+    height: 700px;
+    /*align-items: center;
+    align-content: flex-end;
+    flex-wrap: wrap;*/
+    /*gap: 20px; espaçamento entre os itens*/
+    /*align-content: center; para usar essa opção será preciso usar também o flex-wrap como wrap e ter o width e height bem definidos*/
+    /* flex-wrap: wrap; flex-wrap é quebra de linha para caber os elementos dentro do container*/
+    /*flex-flow: row-reverse wrap; essa opção é a mesma coisa que usar flex-direction e flex-wrap*/
+}
+
+/*
+Main Axis - Eixo principal
+Cross Axis - Eixo Secundário
+
+flex-direction: row;
+justify-content: space-between; sempre vai alinhar no eixo principal seja row ou column
+
+*/
+
+.block {
+    width: 100px;
+    height: 100px;
+    background: #cececece;
+    border: 7px solid #000fff;
+    border-radius: 7px;
+    color: #000;
+    font-weight: bolder;
+    text-align: center;
+    margin: 10px;
+}
+
+/* toda div padrão vêm como display block uma embaixo da outra */

@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* display flex sempre será colocado no container por exemplo. display flex sozinho alinha um do lado do outro.*/
+
+.container {
+    margin: 10px;
+    border: 1px solid #ff0000;
+    display: flex;
+    height: 700px;
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+
+.block {
+    background: #cececece;
+    border: 7px solid #000fff;
+    border-radius: 7px;
+    color: #000;
+    font-weight: bolder;
+    text-align: center;
+    margin: 10px;
+    /*flex-basis: 200px;*/
+    /*flex-grow: 1; /* cresce no espaço vago. para deixar um item maior que o outro basta colocar separado no outro item o flex-grow maior*/
+    /*flex-shrink: 2; /* essa opção é para diminuir o item*/
+    /*flex: 100px 1 1; /* flex é um atalho para  basics, grow, shrink*/
+    /*order: 2; /* muda as ordens dos itens*/
+
+    height: 100px;
+    flex-grow: 1;
+}
+
+.block-3 {
+    background: #cececece;
+    border: 7px solid #000fff;
+    border-radius: 7px;
+    color: #000;
+    font-weight: bolder;
+    text-align: center;
+    margin: 10px;
+    /*flex-basis: 200px;
+    flex: 200px 4 4;
+    order: 1;*/
+    height: 100px;
+    flex-grow: 1;
+    align-self: self-end;
+}
